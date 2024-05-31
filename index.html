@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Scape</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo.png" type="img/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form id= "registerForm" action="" name="Formfill" onsubmit="return validation()">
+                <h2>Register</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bxs-user' ></i>
+                    <input type="text" id="username" name="Username" placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" name="Email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" id="password" name="Password" placeholder="Password">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" id="cpassword" name="cPassword" placeholder="Confirm Password">
+                </div>
+                <div class="button">
+                </div>    
+                <input type="submit" class="btn" onclick="validation()" value="Register">
+
+            </form>
+        </div>
+        <!--popup-->
+        <div class="popup" id="popup">
+            <h2><br>Thank You</h2><br>
+            <p>You're now registered!<br>Please proceed to Logging in.</p>
+            <a><button onclick="toLogin()">Login</button></a>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
